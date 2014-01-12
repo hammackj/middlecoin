@@ -2,6 +2,8 @@
 
 A rubygem for interacting with middlecoin.com JSON web api.
 
+[![Gem Version](https://badge.fury.io/rb/middlecoin.png)](http://badge.fury.io/rb/middlecoin)
+
 # Installation
 
 	% gem install middlecoin
@@ -9,6 +11,8 @@ A rubygem for interacting with middlecoin.com JSON web api.
 # Usage
 
 	% middlecoin 1Cfd5G6rJmSBrNcTHxEgE4uYgH7XZJPY7Z
+
+	% middlecoin 1Cfd5G6rJmSBrNcTHxEgE4uYgH7XZJPY7Z 1Cfd5G6rJmSBrNcTHxEgE4uYgH7XZJPY7Z
 
 # Contributing
 

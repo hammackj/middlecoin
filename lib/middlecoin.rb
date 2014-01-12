@@ -21,7 +21,7 @@
 
 module Middlecoin
 	APP_NAME = "middlecoin"
-	VERSION = "0.0.1"
+	VERSION = "0.0.2"
 	GITHUB = "http://github.com/hammackj/middlecoin"
 	EMAIL = "jacob.hammack@hammackj.com"
 	MIDDLECOIN_URL = "http://middlecoin.com"

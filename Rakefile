@@ -33,13 +33,14 @@ task :tag_and_bag do
 	system "git tag -a v#{Middlecoin::VERSION} -m 'version #{Middlecoin::VERSION}'"
 	system "git push --tags"
 	system "git checkout master"
-	system "git merge #{Middlecoin::VERSION}"
+	#system "git merge #{Middlecoin::VERSION}"
 	system "git push"
 end
 
 task :release => [:tag_and_bag, :build] do
  	system "gem push #{Middlecoin::APP_NAME}-#{Middlecoin::VERSION}.gem"
-	puts "Just released #{Middlecoin::APP_NAME} v#{Middlecoin::VERSION}. #{Middlecoin::APP_NAME} is a parser/status checker for middlecoin.com. More information at http://github.com/hammackj/middlecoin"
+	puts "Just released #{Middlecoin::APP_NAME} v#{Middlecoin::VERSION}. #{Middlecoin::APP_NAME} is a status checker for middlecoin.com. More information at http://github.com/hammackj/middlecoin"
+	system "rm #{Middlecoin::APP_NAME}-#{Middlecoin::VERSION}.gem"
 end
 
 task :clean do
